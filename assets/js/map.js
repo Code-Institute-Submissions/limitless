@@ -142,3 +142,13 @@ function searchPointOfInterest() {
         }
     });
 }
+
+// Clear markers when new radio option selected
+function clearMarker() {
+    for (var x = 0; x < markers.length; x++) {
+        if (markers[x]) {
+            markers[x].setMap(null);
+        }
+    }
+    markers = [];
+}
