@@ -30,3 +30,40 @@ function initMap() {
         document.getElementById('food-filter').addEventListener('change', onPlaceChanged);
         document.getElementById('interest-filter').addEventListener('change', onPlaceChanged);  
 }
+
+// Select autocomplete query - return details of place and zoom into area
+function onPlaceChanged() {
+    if ($("#accommodation-filter").is(':checked')) {
+        var place = autocomplete.getPlace();
+        if (place.geometry) {
+            map.panTo(place.geometry.location);
+            map.setZoom(15);
+            searchAccommodation();
+        }
+        else {
+            $('#autocomplete').attr("placeholder", "Search");
+        }
+    }
+    else if ($("#food-filter").is(':checked')) {
+        var place = autocomplete.getPlace();
+        if (place.geometry) {
+            map.panTo(place.geometry.location);
+            map.setZoom(15);
+            searchFoodAndDrink();
+        }
+        else {
+            $('#autocomplete').attr("placeholder", "Search");
+        }
+    }
+    else if ($("#interest-filter").is(':checked')) {
+        var place = autocomplete.getPlace();
+        if (place.geometry) {
+            map.panTo(place.geometry.location);
+            map.setZoom(15);
+            searchPointOfInterest();
+        }
+        else {
+            $('#autocomplete').attr("placeholder", "Search");
+        }
+    }
+}
