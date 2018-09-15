@@ -67,3 +67,28 @@ function onPlaceChanged() {
         }
     }
 }
+
+// Search for accommodation
+function searchAccommodation() {
+    var search = {
+        bounds: map.getBounds(),
+        types: ['lodging', 'campground']
+    };
+    places.nearbySearch(search,function(results, status) {
+        if (status === google.maps.places.PlacesServiceStatus.OK) {
+            clearResult();
+            clearMarker();
+            // Create marker
+            for (var x = 0; x < results.length; x++) {
+                markers[x] = new google.maps.Marker({
+                    position: results[x].geometry.location
+                });
+                // When user clicks accommodation marker, show details
+                markers[x].placeResult = results[x];
+                google.maps.event.addListener(markers[x], 'click', showInfoWindow);
+                setTimeout(dropMarkers(x), x * 100);
+                addResult(results[x], x);
+            }
+        }
+    });
+}
