@@ -172,3 +172,15 @@ function clearResult() {
     }
 }
 
+// Fetch place details
+function showInfoWindow() {
+    var marker = this;
+    places.getDetails({placeId: marker.placeResult.place_id},
+        function(place, status) {
+            if (status !== google.maps.places.PlacesServiceStatus.OK) {
+                return;
+            }
+            infoWindow.open(map, marker);
+            setPlaceDetails(place);
+        });
+}
