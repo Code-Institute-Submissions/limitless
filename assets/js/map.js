@@ -159,3 +159,16 @@ function dropMarkers(x) {
         markers[x].setMap(map);
     };
 }
+
+// Results originally to be displayed in list however feature not implemented
+// Removing function below results in bug - only one marker dropped onto map
+function addResult() {
+
+}
+function clearResult() {
+    var results = document.getElementById('results');
+    while (results.childeNodes[0]) {
+        results.removeChild(results.childNodes[0]);
+    }
+}
+
