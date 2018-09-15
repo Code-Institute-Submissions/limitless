@@ -39,3 +39,34 @@ body {
 .radio-buttons {
     margin-right: 5px;
 }
+
+/*-- Search Results --*/
+.hint-statement {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.hint-box {
+    background-color: #fafafa;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#place-details {
+    margin-right: 15px;
+}
+
+#url {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.detail-list {
+    margin-top: 20px;
+    list-style-type: none;
+}
+
+.detail-name {
+    font-weight: bold;
+    font-size: 14px;
+}
