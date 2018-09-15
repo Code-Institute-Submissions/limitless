@@ -167,7 +167,7 @@ function addResult() {
 }
 function clearResult() {
     var results = document.getElementById('results');
-    while (results.childeNodes[0]) {
+    while (results.childNodes[0]) {
         results.removeChild(results.childNodes[0]);
     }
 }
