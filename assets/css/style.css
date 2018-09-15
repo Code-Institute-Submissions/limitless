@@ -21,3 +21,21 @@ body {
     font-family: 'Patua One', cursive;
     font-size: 30px;
 }
+
+/*-- Map and Filter --*/
+.find {
+    text-align: center;
+    background-color: #fafafa;
+    padding-top: 20px;
+    padding-bottom: 15px;
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+
+#map {
+    min-height: 500px;
+}
+
+.radio-buttons {
+    margin-right: 5px;
+}
