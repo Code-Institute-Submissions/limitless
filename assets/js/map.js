@@ -184,3 +184,16 @@ function showInfoWindow() {
             setPlaceDetails(place);
         });
 }
+
+// Show place details in info window on map
+function setPlaceDetails(place) {
+    document.getElementById('url').innerHTML = '<a href="' + place.url + 'target="_blank">' + place.name + '</a>';
+    document.getElementById('address').textContent = place.vicinity;
+    // If no phone number, 'Telephone' will not display
+    if (place.formatted_phone_number) {
+        document.getElementById('phone').textContent = place.formatted_phone_number;
+    }
+    else {
+        document.getElementById('if-phone').style.display = 'none';
+    }
+}
