@@ -70,3 +70,34 @@ body {
     font-weight: bold;
     font-size: 14px;
 }
+
+/*-- Footer --*/
+footer {
+    width: 100%;
+    min-height: 120px;
+    margin: 0;
+}
+
+#connect {
+    color: #fafafa;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+i {
+    color: #fafafa;
+}
+
+.social {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#copyright {
+    color: #fafafa;
+    margin-top: 5px;
+}
+
+.github {
+    margin-left: 10px
+}
