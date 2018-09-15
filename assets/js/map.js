@@ -92,3 +92,28 @@ function searchAccommodation() {
         }
     });
 }
+
+// Search for food and drink
+function searchFoodAndDrink() {
+    var search = {
+        bounds: map.getBounds(),
+        types: ['restaurant', 'bar']
+    };
+    places.nearbySearch(search,function(results, status) {
+        if (status === google.maps.places.PlacesServiceStatus.OK) {
+            clearResult();
+            clearMarker();
+            // Create marker
+            for (var x = 0; x < results.length; x++) {
+                markers[x] = new google.maps.Marker({
+                    position: results[x].geometry.location
+                });
+                // When user clicks food and drink marker, show details
+                markers[x].placeResult = results[x];
+                google.maps.event.addListener(markers[x], 'click', showInfoWindow);
+                setTimeout(dropMarkers(x), x * 100);
+                addResult(results[x], x);
+            }
+        }
+    });
+}
