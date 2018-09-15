@@ -152,3 +152,10 @@ function clearMarker() {
     }
     markers = [];
 }
+
+// Add found results to map
+function dropMarkers(x) {
+    return function() {
+        markers[x].setMap(map);
+    };
+}
