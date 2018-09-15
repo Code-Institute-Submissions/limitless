@@ -1,2 +1,17 @@
 /*-- Fonts --*/
 @import url('https://fonts.googleapis.com/css?family=Patua+One');
+
+/*-- HTML and Body --*/
+html, body {
+    min-height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: url('beach.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
