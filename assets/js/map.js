@@ -117,3 +117,28 @@ function searchFoodAndDrink() {
         }
     });
 }
+
+// Search for points of interest
+function searchPointOfInterest() {
+    var search = {
+        bounds: map.getBounds(),
+        types: ['shopping_mall', 'night_club', 'museum', 'art_gallery', 'park', 'amusement_park']
+    };
+    places.nearbySearch(search,function(results, status) {
+        if (status === google.maps.places.PlacesServiceStatus.OK) {
+            clearResult();
+            clearMarker();
+            // Create marker
+            for (var x = 0; x < results.length; x++) {
+                markers[x] = new google.maps.Marker({
+                    position: results[x].geometry.location
+                });
+                // When user clicks point of interest marker, show details
+                markers[x].placeResult = results[x];
+                google.maps.event.addListener(markers[x], 'click', showInfoWindow);
+                setTimeout(dropMarkers(x), x * 100);
+                addResult(results[x], x);
+            }
+        }
+    });
+}
