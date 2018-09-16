@@ -5,7 +5,7 @@ This website is available to view here - https://kimpea.github.io/limitless/
 This website has been created to allow users to search for a location, specifically their next holiday destination, and to find out more information on the accommodation,
 food and drink, and points of interest available within the area that they have searched for. With the help of Google Maps JavaScript API, users can obtain this information through pop up windows that are triggered when a radio button has been checked, e.g. when the accommodation radio button is checked, markers will appear on the map displaying accommodation within the area that has been searched for. The Maps API also allows users to view StreetView images and satellite imagery. 
  
-## UX
+## UX - Strategy Plane
 
 This website is targeted towards users aiming to travel to a planned destination or towards users who want to find out more about accommodation, places to eat or attractions within an area they are curious about. This type of user will want to know where places to stay and places to eat are, and also points of interest which they may like to visit on their holiday. My project is a suitable way of achieving this because it provides filters for the user to use when they search for a place to visit and also provides them with information such as addresses and telephone numbers of establishments they are interested in. It is an easy-to-use website - all the user has to do is type in their chosen location into the search bar, select a query and a filter, and then select a marker on the map to reveal the information they are seeking. Once they have found what they are looking for, the user can click on the place name in the info window which takes them to Google Maps, providing more information such as photos, reviews and ratings. 
 
@@ -19,11 +19,11 @@ Real Life User Stories:
 - User 2: I want to go away to Barbados for my birthday next year - I'd like to know what hotels or apartments there are which I can stay in.
 - User 3: I'm getting bored being at home all the time - I'd like to know what attractions there are in my local area. 
 
-Wireframe - https://wireframe.cc/JztSx9 - built using Wireframe.cc, a free-to-use online wireframe tool
+Wireframe - https://wireframe.cc/JztSx9
 
 This section is also where you would share links to any wireframes, mockups, diagrams etc. that you created as part of the design process. These files should themselves either be included in the project itself (in an separate directory), or just hosted elsewhere online and can be in any format that is viewable inside the browser.
 
-## Features
+## Features - Scope Plane
 
 In this section, you should go over the different parts of your project, and describe each in a sentence or so.
 
@@ -58,8 +58,6 @@ These features would mean the user relies more on my website rather than moving 
 
 ## Technologies Used
 
-In this section, you should mention all of the languages, frameworks, libraries, and any other tools that you have used to construct this project. For each, provide its name, a link to its official site and a short sentence of why it was used.
-
 - [JQuery](https://jquery.com)
     - The project uses **JQuery** to simplify DOM manipulation.
 - [JavaScript](https://www.javascript.com/)
@@ -78,6 +76,10 @@ In this section, you should mention all of the languages, frameworks, libraries,
     - This project uses the **Google Places API** Place Autocomplete feature to allow a user's search query to autocomplete.
 - [Font Awesome](https://fontawesome.com/)
     - This project uses **Font Awesome** to provide icons for the social media links inside the footer of the page.
+- [Wireframe.cc](https://wireframe.cc/JztSx9)
+    - This project uses **Wireframe.cc** in the planning.
+- [Google Fonts](https://fonts.google.com/)
+    - This project uses **Google Fonts** to provide the 'Patua One' font for the heading of the website.
 
 ## Testing
 
@@ -93,32 +95,25 @@ For any scenarios that have not been automated, test the user stories manually a
     3. Try to submit the form with an invalid email address and verify that a relevant error message appears
     4. Try to submit the form with all inputs valid and verify that a success message appears.
 
-In addition, you should mention in this section how your project looks and works on different browsers and screen sizes.
 
-You should also mention in this section any interesting bugs or problems you discovered during your testing, even if you haven't addressed them yet.
 
-If this section grows too long, you may want to split it off into a separate file and link to it from here.
+### Responsiveness
+
+### Bugs
 
 ## Deployment
 
 This section should describe the process you went through to deploy the project to a hosting platform (e.g. GitHub Pages or Heroku).
-
-In particular, you should provide all details of the differences between the deployed version and the development version, if any, including:
-- Different values for environment variables (Heroku Config Vars)?
-- Different configuration files?
-- Separate git branch?
-
-In addition, if it is not obvious, you should also describe how to run your code locally.
-
+This project has been deployed onto GitHub, and can be viewed with GitHub Pages here https://kimpea.github.io/limitless/. 
+To run this website locally, you will need to clone or download the repository and then open the index.html in a browser of your choice. 
 
 ## Credits
-
-### Content
-- The text for section Y was copied from the [Wikipedia article Z](https://en.wikipedia.org/wiki/Z)
+Much of the map.js JavaScript code has been taken from the Google Maps JavaScript API and Places API tutorials, however, has been rendered to fit with my project. I would like to credit https://www.doogal.co.uk/LatLong.php in aiding me with finding the longitude and latitude of Europe for centering the map. 
 
 ### Media
-- The photos used in this site were obtained from ...
+- The background photo used in this site was obtained from https://static.independent.co.uk/s3fs-public/thumbnails/image/2017/04/11/12/package-holiday-credit-grafner.jpg?w968 - iStock/Grafner
 
 ### Acknowledgements
+- Stack Overflow
+- Google Maps JavaScript API
 
-- I received inspiration for this project from X
