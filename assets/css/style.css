@@ -36,6 +36,10 @@ body {
     min-height: 500px;
 }
 
+.filter-form {
+    margin-top: 10px;
+}
+
 .radio-buttons {
     margin-right: 5px;
 }
