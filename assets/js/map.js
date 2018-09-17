@@ -1,6 +1,6 @@
 // Map variables
 var map;
-var place;
+
 var infoWindow;
 var markers = [];
 var autocomplete;
