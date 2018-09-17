@@ -83,6 +83,13 @@ These features would mean the user relies more on my website rather than moving 
 
 ## Testing
 
+I tested my website by:
+- Using Chrome and Firefox developer tools from the beginning of the projec to the end to test the functionality and responsiveness.
+- Using these developer tools to see how the website functioned and looked across different device screen sizes. The testing for this has been recorded in the Device Screen Size Test.pdf located in the documentation folder in the repository. 
+- Having my target audience try out the website on their devices and to gain feedback from them.
+- Using different browsers such as Chrome, Firefox and Edge. There were obvious layout issues with older versions of Internet Explorer.
+- Validating the code with [W3C Validator](https://validator.w3.org/)
+
 In this section, you need to convince the assessor that you have conducted enough testing to legitimately believe that the site works well. Essentially, in this part you will want to go over all of your user stories from the UX section and ensure that they all work as intended, with the project providing an easy and straightforward way for the users to achieve their goals.
 
 Whenever it is feasible, prefer to automate your tests, and if you've done so, provide a brief explanation of your approach, link to the test file(s) and explain how to run them.
@@ -100,6 +107,8 @@ For any scenarios that have not been automated, test the user stories manually a
 ### Responsiveness
 
 ### Bugs
+
+Device screen size bug - this bug occurred when testing the responsiveness of the website across various device screen sizes. The Kindle Fire HDX, Nexus 10, iPad Pro and iPad Mini all had issues with the footer of the website floating in the middle of the screen. This bug has been fixed with media queries for the Nexus 10 and iPad Pro which ultimately fixed the issue for the Kindle Fire HDX and iPad Mini too. 
 
 ## Deployment
 
