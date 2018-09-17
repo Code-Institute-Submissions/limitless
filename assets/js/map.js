@@ -1,9 +1,9 @@
 // Map variables
-var map;
-
-var infoWindow;
-var markers = [];
 var autocomplete;
+var map;
+var markers = [];
+var infoWindow;
+var places;
 
 // Initialise map
 function initMap() {
@@ -34,9 +34,9 @@ function initMap() {
 // Select autocomplete query - return details of place and zoom into area
 function onPlaceChanged() {
     if ($("#accommodation-filter").is(':checked')) {
-        var place = autocomplete.getPlace();
+        var place = autocomplete.getPlace();                //getPlace() retrieves place name for autocomplete query
         if (place.geometry) {
-            map.panTo(place.geometry.location);
+            map.panTo(place.geometry.location);             //Retrieves lng/lat of place
             map.setZoom(15);
             searchAccommodation();
         }
@@ -71,23 +71,22 @@ function onPlaceChanged() {
 // Search for accommodation
 function searchAccommodation() {
     var search = {
-        bounds: map.getBounds(),
+        bounds: map.getBounds(),                //getBounds() retrieves lng/lat for corners of visible area of map
         types: ['lodging', 'campground']
     };
-    places.nearbySearch(search,function(results, status) {
-        if (status === google.maps.places.PlacesServiceStatus.OK) {
+    places.nearbySearch(search, function(results, status) {
+        if (status === google.maps.places.PlacesServiceStatus.OK) {         //If Places Service is working, create marker
             clearResult();
             clearMarker();
             // Create marker
             for (var x = 0; x < results.length; x++) {
                 markers[x] = new google.maps.Marker({
-                    position: results[x].geometry.location
+                    position: results[x].geometry.location                  //Positions marker to searched location
                 });
                 // When user clicks accommodation marker, show details
                 markers[x].placeResult = results[x];
                 google.maps.event.addListener(markers[x], 'click', showInfoWindow);
                 setTimeout(dropMarkers(x), x * 100);
-                addResult(results[x], x);
             }
         }
     });
@@ -99,7 +98,7 @@ function searchFoodAndDrink() {
         bounds: map.getBounds(),
         types: ['restaurant', 'bar']
     };
-    places.nearbySearch(search,function(results, status) {
+    places.nearbySearch(search, function(results, status) {
         if (status === google.maps.places.PlacesServiceStatus.OK) {
             clearResult();
             clearMarker();
@@ -112,7 +111,6 @@ function searchFoodAndDrink() {
                 markers[x].placeResult = results[x];
                 google.maps.event.addListener(markers[x], 'click', showInfoWindow);
                 setTimeout(dropMarkers(x), x * 100);
-                addResult(results[x], x);
             }
         }
     });
@@ -124,7 +122,7 @@ function searchPointOfInterest() {
         bounds: map.getBounds(),
         types: ['shopping_mall', 'night_club', 'museum', 'art_gallery', 'park', 'amusement_park']
     };
-    places.nearbySearch(search,function(results, status) {
+    places.nearbySearch(search, function(results, status) {
         if (status === google.maps.places.PlacesServiceStatus.OK) {
             clearResult();
             clearMarker();
@@ -137,7 +135,6 @@ function searchPointOfInterest() {
                 markers[x].placeResult = results[x];
                 google.maps.event.addListener(markers[x], 'click', showInfoWindow);
                 setTimeout(dropMarkers(x), x * 100);
-                addResult(results[x], x);
             }
         }
     });
@@ -160,11 +157,6 @@ function dropMarkers(x) {
     };
 }
 
-// Results originally to be displayed in list however feature not implemented
-// Removing function below results in bug - only one marker dropped onto map
-function addResult() {
-
-}
 function clearResult() {
     var results = document.getElementById('results');
     while (results.childNodes[0]) {
@@ -189,11 +181,5 @@ function showInfoWindow() {
 function setPlaceDetails(place) {
     document.getElementById('url').innerHTML = '<a href="' + place.url + 'target="_blank">' + place.name + '</a>';
     document.getElementById('address').textContent = place.vicinity;
-    // If no phone number, 'Telephone' will not display
-    if (place.formatted_phone_number) {
-        document.getElementById('phone').textContent = place.formatted_phone_number;
-    }
-    else {
-        document.getElementById('if-phone').style.display = 'none';
-    }
+    document.getElementById('phone').textContent = place.formatted_phone_number;
 }
