@@ -19,7 +19,10 @@ Real Life User Stories:
 - User 2: I want to go away to Barbados for my birthday next year - I'd like to know what hotels or apartments there are which I can stay in.
 - User 3: I'm getting bored being at home all the time - I'd like to know what attractions there are in my local area. 
 
-Wireframe - https://wireframe.cc/JztSx9
+Wireframes:
+- [Desktop and laptop wireframe](https://wireframe.cc/JztSx9)
+- [Mobile wireframe](https://wireframe.cc/gsisCp)
+- [Tablet wireframe](https://wireframe.cc/QXjHIG)
 
 This section is also where you would share links to any wireframes, mockups, diagrams etc. that you created as part of the design process. These files should themselves either be included in the project itself (in an separate directory), or just hosted elsewhere online and can be in any format that is viewable inside the browser.
 
@@ -76,7 +79,7 @@ These features would mean the user relies more on my website rather than moving 
     - This project uses the **Google Places API** Place Autocomplete feature to allow a user's search query to autocomplete.
 - [Font Awesome](https://fontawesome.com/)
     - This project uses **Font Awesome** to provide icons for the social media links inside the footer of the page.
-- [Wireframe.cc](https://wireframe.cc/JztSx9)
+- [Wireframe.cc](https://wireframe.cc)D
     - This project uses **Wireframe.cc** in the planning.
 - [Google Fonts](https://fonts.google.com/)
     - This project uses **Google Fonts** to provide the 'Patua One' font for the heading of the website.
