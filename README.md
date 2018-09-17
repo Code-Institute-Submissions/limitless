@@ -2,8 +2,7 @@
 
 This website is available to view here - https://kimpea.github.io/limitless/
 
-This website has been created to allow users to search for a location, specifically their next holiday destination, and to find out more information on the accommodation,
-food and drink, and points of interest available within the area that they have searched for. With the help of Google Maps JavaScript API, users can obtain this information through pop up windows that are triggered when a radio button has been checked, e.g. when the accommodation radio button is checked, markers will appear on the map displaying accommodation within the area that has been searched for. The Maps API also allows users to view StreetView images and satellite imagery. 
+This website has been created to allow users to search for a location, specifically their next holiday destination, and to find out more information on the accommodation, food and drink, and points of interest available within the area that they have searched for. With the help of Google Maps JavaScript API, users can obtain this information through pop up windows that are triggered when a radio button has been checked, e.g. when the accommodation radio button is checked, markers will appear on the map displaying accommodation within the area that has been searched for. The Maps API also allows users to view StreetView images and satellite imagery. 
  
 ## UX - Strategy Plane
 
@@ -24,11 +23,7 @@ Wireframes:
 - [Mobile wireframe](https://wireframe.cc/gsisCp)
 - [Tablet wireframe](https://wireframe.cc/QXjHIG)
 
-This section is also where you would share links to any wireframes, mockups, diagrams etc. that you created as part of the design process. These files should themselves either be included in the project itself (in an separate directory), or just hosted elsewhere online and can be in any format that is viewable inside the browser.
-
 ## Features - Scope Plane
-
-In this section, you should go over the different parts of your project, and describe each in a sentence or so.
 
 - Autocomplete search feature -  allowing user to search for a location of their choice and pick from a dropdown of suggestions for more specific search. 
 - Radio buttons - allowing user to filter out their search between accommodation, food & drink and points of interest.
@@ -93,21 +88,33 @@ I tested my website by:
 - Using different browsers such as Chrome, Firefox and Edge. There were obvious layout issues with older versions of Internet Explorer.
 - Validating the code with [W3C Validator](https://validator.w3.org/)
 
-In this section, you need to convince the assessor that you have conducted enough testing to legitimately believe that the site works well. Essentially, in this part you will want to go over all of your user stories from the UX section and ensure that they all work as intended, with the project providing an easy and straightforward way for the users to achieve their goals.
+Scenarios for users:
+1. Search for location:
+    1. Go to the search bar
+    2. Click in search bar and verify that the tooltip 'Please fill in this field' is displayed
+    3. Enter a country, e.g. Spain, click on the first autocomplete result, choose a filter and verify that the results are inaccurate.
+    4. Enter a specific location, e.g. Bridgetown, click on the first autocomplete result, choose a filter and verify that results are accurate.
 
-Whenever it is feasible, prefer to automate your tests, and if you've done so, provide a brief explanation of your approach, link to the test file(s) and explain how to run them.
+2. Find out more:
+    1. Following on from first scenario, click on any marker and verify an establishment name, address and telephone are provided. 
+    2. Repeat this with each filter and verify new markers are dropped onto the map. 
 
-For any scenarios that have not been automated, test the user stories manually and provide as much detail as is relevant. A particularly useful form for describing your testing process is via scenarios, such as:
+3. Map Features:
+    1. Click on 'Satellite' and verify that the map changes from the default layout to satellite view. 
+    2. Uncheck 'Labels' when in Satellite mode and verify that labels disappear (and reappear when checking it).
+    3. Use Ctrl + Scroll (desktop) and verify that the map zooms in/out. For mobile, use fingers and verify that the map zooms in/out.
+    4. Drop the 'Streetview' icon onto the map and verify that an image loads of the place where the icon was dropped.
+    5. Click on the fullscreen button (top-right of map) and verify that the map enters fullscreen mode. Press 'esc' to exit this mode. 
 
-1. Contact form:
-    1. Go to the "Contact Us" page
-    2. Try to submit the empty form and verify that an error message about the required fields appears
-    3. Try to submit the form with an invalid email address and verify that a relevant error message appears
-    4. Try to submit the form with all inputs valid and verify that a success message appears.
-
-
+Results from scenario tests:
+- Users found that searching for a location of their choice was quick and simple to do and noted that it helps having a specific location in mind before carrying out their search in order to receive accurante results from the Map API. 
+- Users found that the map markers provided sufficient information on establishments which they were interested in. They suggested that adding a rating feature would be useful too. 
+- Users found that the Streetview map feature was very helpful as, rather than finding out more information on establishments in their chosen area, they could also see what the area's environment looked like. 
 
 ### Responsiveness
+
+Responsiveness has been tested and recorded [here](documentation/device_test.pdf). 
+[Insert desktop, mobile and tablet screenshots here]
 
 ### Bugs
 
@@ -115,15 +122,14 @@ Device screen size bug - this bug occurred when testing the responsiveness of th
 
 ## Deployment
 
-This section should describe the process you went through to deploy the project to a hosting platform (e.g. GitHub Pages or Heroku).
 This project has been deployed onto GitHub, and can be viewed with GitHub Pages here https://kimpea.github.io/limitless/. 
 To run this website locally, you will need to clone or download the repository and then open the index.html in a browser of your choice. 
 
 ## Credits
-Much of the map.js JavaScript code has been taken from the Google Maps JavaScript API and Places API tutorials, however, has been rendered to fit with my project. I would like to credit https://www.doogal.co.uk/LatLong.php in aiding me with finding the longitude and latitude of Europe for centering the map. 
+Much of the map.js JavaScript code has been taken from the Google Maps JavaScript API and Places API tutorials, however, has been rendered to fit with my project. I would like to credit https://www.doogal.co.uk/LatLong.php in aiding me with finding the longitude and latitude of Europe for centering the map. I would also like to credit Stack Overflow in helping me solve responsiveness bugs and also explaining why errors occurred with the W3C Validator. 
 
 ### Media
-- The background photo used in this site was obtained from https://static.independent.co.uk/s3fs-public/thumbnails/image/2017/04/11/12/package-holiday-credit-grafner.jpg?w968 - iStock/Grafner
+- The background photo used in this site was obtained from [this website](https://static.independent.co.uk/s3fs-public/thumbnails/image/2017/04/11/12/package-holiday-credit-grafner.jpg?w968) - iStock/Grafner
 
 ### Acknowledgements
 - Stack Overflow
