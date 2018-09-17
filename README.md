@@ -85,7 +85,7 @@ These features would mean the user relies more on my website rather than moving 
 
 I tested my website by:
 - Using Chrome and Firefox developer tools from the beginning of the projec to the end to test the functionality and responsiveness.
-- Using these developer tools to see how the website functioned and looked across different device screen sizes. The testing for this has been recorded in the Device Screen Size Test.pdf located in the documentation folder in the repository. 
+- Using these developer tools to see how the website functioned and looked across different device screen sizes. The testing for this has been recorded [here](documentation/device_test.pdf).
 - Having my target audience try out the website on their devices and to gain feedback from them.
 - Using different browsers such as Chrome, Firefox and Edge. There were obvious layout issues with older versions of Internet Explorer.
 - Validating the code with [W3C Validator](https://validator.w3.org/)
