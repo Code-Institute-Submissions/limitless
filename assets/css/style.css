@@ -106,3 +106,67 @@ i {
 .github {
     margin-left: 10px
 }
+
+/*-- Media Queries --*/
+/*-- Nexus 10 --*/
+@media only screen and (min-device-width: 800px) and (max-device-width: 1280px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1.5) {
+    footer {
+        position: fixed;
+        bottom: 0;
+    }
+    
+    #map {
+        min-height: 650px;
+    }
+    
+    #limitless {
+        font-size: 50px;
+    }
+}
+
+/*-- iPad Pro --*/
+/*-- Portrait --*/
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1.5) {
+    #map {
+        min-height: 760px;
+    }
+    
+    #limitless {
+        font-size: 60px;
+    }
+    
+    #connect {
+        font-size: 40px;
+    }
+    
+    .fa {
+        font-size: 2em;
+    }
+    
+    #copyright {
+        font-size: 20px;
+    }
+}
+
+/*-- Landscape --*/
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1.5) {
+    #map {
+        min-height: 600px;
+    }
+    
+    #limitless {
+        font-size: 50px;
+    }
+    
+    #connect {
+        font-size: 30px;
+    }
+    
+    .fa {
+        font-size: 20px;
+    }
+    
+    #copyright {
+        font-size: 20px;
+    }
+}
