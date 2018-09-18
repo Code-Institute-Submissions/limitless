@@ -49,6 +49,7 @@ Info window feature gives the user the establishment name, address and telephone
 ![Info Window](documentation/infowindow.png)
 
 Social media links feature allows all users, if they want to, to follow 'Limitless' on Facebook, Twitter and Instagram, however, this is only a design feature for now to make the website appear more user-friendly and welcoming. 
+![Social links](documentation/social.png)
 
 ### Features Left to Implement
 - Add ratings to the info window on the map
