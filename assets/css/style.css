@@ -173,6 +173,6 @@ i {
 
 /*-- README Styles --*/
 img[alt="User 3 Scenario"] {
-    max-width: 591px;
-    max-height: 354px;
+    width: 591px;
+    height: 354px;
 }
