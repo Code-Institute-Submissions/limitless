@@ -40,7 +40,7 @@ Autocomplete feature allows Users 1, 2 and 3 to search for and select their chos
 ![Autocomplete Issue](documentation/autocomplete-issue.png)
 
 Radio buttons feature allows Users 1 to filter out places to eat and drink in Almeria, allows User 2 to filter out places to stay in Barbados, and allows User 3 to find points of interest in their local area (if there are any). 
-![User 3 Scenario](documentation/user3.png)
+![User 3 Scenario](documentation/user3.png =591x354)
 
 Maps API feature allows all users to have access to the information on the establishments they are most interested in, depending on what filters they have chosen. It allows all the users to use Google StreetView Images and satellite imagery. 
 (Insert satellite image here)
