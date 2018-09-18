@@ -81,6 +81,8 @@ These features would mean the user relies more on my website rather than moving 
     - This project uses **Wireframe.cc** in the planning.
 - [Google Fonts](https://fonts.google.com/)
     - This project uses **Google Fonts** to provide the 'Patua One' font for the heading of the website.
+- [Paint.NET](https://www.getpaint.net/)
+    - This project uses **Paint.NET** to edit and resize screenshots taken of the website.
 
 ## Testing
 
