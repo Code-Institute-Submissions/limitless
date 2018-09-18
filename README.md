@@ -117,7 +117,11 @@ Results from scenario tests:
 ### Responsiveness
 
 Responsiveness has been tested and recorded [here](documentation/device_test.pdf). 
-[Insert desktop, mobile and tablet screenshots here]
+Screenshots of the website in mobile, tablet and desktop view are here:
+- [Mobile - Galaxy 3](documentation/mobile-view.png)
+- [Tablet - iPad](documentation/tablet-view.png)
+- [Desktop](documentation/desktop-view.png)
+Please note that these screenshots are of what the user will see when they first visit the website and that they will be able to scroll to see the bottom of the page.
 
 ### Bugs
 
