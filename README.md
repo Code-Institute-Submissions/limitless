@@ -6,7 +6,7 @@ This website has been created to allow users to search for a location, specifica
  
 ## UX 
 
-This website is targeted towards users aiming to travel to a planned destination or towards users who want to find out more about accommodation, places to eat or attractions within an area they are curious about. This type of user will want to know where places to stay and places to eat are, and also points of interest which they may like to visit on their holiday. My project is a suitable way of achieving this because it provides filters for the user to use when they search for a place to visit and also provides them with information such as addresses and telephone numbers of establishments they are interested in. It is an easy-to-use website - all the user has to do is type in their chosen location into the search bar, select a query and a filter, and then select a marker on the map to reveal the information they are seeking. Once they have found what they are looking for, the user can click on the place name in the info window which takes them to Google Maps, providing more information such as photos, reviews and ratings. 
+This website is targeted towards users aiming to travel to a planned destination or towards users who want to find out more about accommodation, places to eat or attractions within an area they are curious about. This type of user will want to know where places to stay and places to eat are, and also points of interest which they may like to visit on their holiday. My project is a suitable way of achieving this because it provides filters for the user to use when they search for a place to visit and also provides them with information such as addresses and telephone numbers of establishments they are interested in. It is an easy-to-use website - all the user has to do is type in their chosen location into the search bar, select a query and a filter, and then select a marker on the map to reveal the information they are seeking. Once they have found what they are looking for, the user can click on the place name in the info window which takes them to Google Maps, providing more information such as reviews and ratings. The user may also use the Streetview feature and satellite imagery to get a better understanding of what the location they searched for looks like.
 
 General User Stories:
 - As a user type, I want to be able to call up a restaurant in an area I am visiting next month, so that I can book a table.
@@ -48,7 +48,7 @@ Maps API feature allows all users to have access to the information on the estab
 Info window feature gives the user the establishment name, address and telephone number (if available) when the place marker is clicked. The user also has the option to click on the place name and be directed to Google Maps which will provide more information on the chosen establishment, such as photos, reviews, ratings and opening hours. 
 ![Info Window](documentation/infowindow.png)
 
-Social media links feature allows all users, if they want to, to follow 'Limitless' on Facebook, Twitter and Instagram, however, this is only a design feature for now to make the website appear more user-friendly and welcoming. 
+Social media links feature allows all users, if they want to, to follow 'Limitless' on Facebook, Twitter and Instagram, however, this is only a design feature for now to make the website appear more welcoming and user-friendly.
 ![Social links](documentation/social.png)
 
 ### Features Left to Implement
@@ -58,17 +58,16 @@ Social media links feature allows all users, if they want to, to follow 'Limitle
 These features would mean the user relies more on my website rather than moving onto Google Maps when clicking on the place name link, however, I have left them out for now in order to not further delay and complicate the project. 
 
 ## Technologies Used
-
-- [JQuery](https://jquery.com)
-    - The project uses **JQuery** to simplify DOM manipulation.
-- [JavaScript](https://www.javascript.com/)
-    - This project uses **JavaScript** to implement the Google Maps API into the document.
 - HTML
     - This project uses **HTML** to build the foundation of the website and include links to CSS and JavaScript scripts.
 - CSS
     - This project uses **CSS** to style the features of the website, including the header, footer and the map itself.
+- [JavaScript](https://www.javascript.com/)
+    - This project uses **JavaScript** to implement the Google Maps API into the document.        
+- [JQuery](https://jquery.com)
+    - The project uses **JQuery** to simplify DOM manipulation, e.g. on line 36 of map.js. 
 - [Bootstrap 4](https://getbootstrap.com/)
-    - This project uses **Bootstrap 4** in order to apply a columns, a navbar and to justify content within the HTML document for a clean, fresh look.
+    - This project uses **Bootstrap 4** in order to apply columns, a navbar and to justify content within the HTML document for a clean, fresh look.
 - [Bootswatch](https://bootswatch.com/united/)
     - This project uses the **Bootswatch United Theme** to apply the navbar within the header, and also to set the colour scheme of the website.
 - [Google Maps JavaScript API](https://developers.google.com/maps/documentation/javascript/tutorial)
@@ -78,7 +77,7 @@ These features would mean the user relies more on my website rather than moving 
 - [Font Awesome](https://fontawesome.com/)
     - This project uses **Font Awesome** to provide icons for the social media links inside the footer of the page.
 - [Wireframe.cc](https://wireframe.cc)
-    - This project uses **Wireframe.cc** in the planning.
+    - This project uses **Wireframe.cc** for the Skeleton Plane.
 - [Google Fonts](https://fonts.google.com/)
     - This project uses **Google Fonts** to provide the 'Patua One' font for the heading of the website.
 - [Paint.NET](https://www.getpaint.net/)
@@ -87,11 +86,11 @@ These features would mean the user relies more on my website rather than moving 
 ## Testing
 
 I tested my website by:
-- Using Chrome and Firefox developer tools from the beginning of the projec to the end to test the functionality and responsiveness.
+- Using Chrome and Firefox developer tools from the beginning of the project to the end to test the functionality and responsiveness.
 - Using these developer tools to see how the website functioned and looked across different device screen sizes. The testing for this has been recorded [here](documentation/device_test.pdf).
 - Having my target audience try out the website on their devices and to gain feedback from them.
 - Using different browsers such as Chrome, Firefox and Edge. There were obvious layout issues with older versions of Internet Explorer.
-- Validating the code with [W3C Validator](https://validator.w3.org/)
+- Validating the code with [W3C Validator](https://validator.w3.org/).
 
 Scenarios for users:
 1. Search for location:
@@ -125,7 +124,7 @@ Screenshots of the website in mobile, tablet and desktop view are here:
 - [Tablet - iPad](documentation/tablet-view.png)
 - [Desktop](documentation/desktop-view.png)
 
-Please note that these screenshots are of what the user will see when they first visit the website and that they will be able to scroll to see the bottom of the page.
+Please note that these screenshots are of what the user will see when they first visit the website and that they will be able to scroll down to see the bottom of the page.
 
 ### Bugs
 
@@ -133,11 +132,11 @@ Device screen size bug - this bug occurred when testing the responsiveness of th
 
 ## Deployment
 
-This project has been deployed onto GitHub, and can be viewed with GitHub Pages here https://kimpea.github.io/limitless/. 
+This project has been deployed onto GitHub, and can be viewed through GitHub Pages here https://kimpea.github.io/limitless/. 
 To run this website locally, you will need to clone or download the repository and then open the index.html in a browser of your choice. 
 
 ## Credits
-Much of the map.js JavaScript code has been taken from the Google Maps JavaScript API and Places API tutorials, however, has been rendered to fit with my project. I would like to credit https://www.doogal.co.uk/LatLong.php in aiding me with finding the longitude and latitude of Europe for centering the map. I would also like to credit Stack Overflow in helping me solve responsiveness bugs and also explaining why errors occurred with the W3C Validator. 
+Much of the map.js JavaScript code has been taken from the Google Maps JavaScript API and Places API tutorials, however, has been rendered to fit with my project. I would like to credit https://www.doogal.co.uk/LatLong.php in aiding me with finding the longitude and latitude of Europe for centering the map. I would also like to credit Stack Overflow in helping me solve responsiveness bugs and also explaining why errors occurred within my code when passed through the W3C Validator. 
 
 ### Media
 - The background photo used in this site was obtained from [this website](https://static.independent.co.uk/s3fs-public/thumbnails/image/2017/04/11/12/package-holiday-credit-grafner.jpg?w968) - iStock/Grafner
