@@ -43,7 +43,7 @@ Radio buttons feature allows Users 1 to filter out places to eat and drink in Al
 ![User 3 Scenario](documentation/user3.png)
 
 Maps API feature allows all users to have access to the information on the establishments they are most interested in, depending on what filters they have chosen. It allows all the users to use Google StreetView Images and satellite imagery. 
-(Insert satellite image here)
+![Satellite](documentation/satellite.png)
 
 Info window feature gives the user the establishment name, address and telephone number (if available) when the place marker is clicked. The user also has the option to click on the place name and be directed to Google Maps which will provide more information on the chosen establishment, such as photos, reviews, ratings and opening hours. 
 (Insert infowindow image here)
