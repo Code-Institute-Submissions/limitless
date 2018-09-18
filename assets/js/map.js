@@ -33,7 +33,7 @@ function initMap() {
 
 // Select autocomplete query - return details of place and zoom into area
 function onPlaceChanged() {
-    if ($("#accommodation-filter").is(':checked')) {
+    if ($("#accommodation-filter").is(':checked')) {        
         var place = autocomplete.getPlace();                //getPlace() retrieves place name for autocomplete query
         if (place.geometry) {
             map.panTo(place.geometry.location);             //Retrieves lng/lat of place
