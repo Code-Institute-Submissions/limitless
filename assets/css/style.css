@@ -170,3 +170,9 @@ i {
         font-size: 20px;
     }
 }
+
+/*-- README Styles --*/
+img[alt="User 3 Scenario"] {
+    max-width: 591px;
+    max-height: 354px;
+}
