@@ -46,7 +46,7 @@ Maps API feature allows all users to have access to the information on the estab
 ![Satellite](documentation/satellite.png)
 
 Info window feature gives the user the establishment name, address and telephone number (if available) when the place marker is clicked. The user also has the option to click on the place name and be directed to Google Maps which will provide more information on the chosen establishment, such as photos, reviews, ratings and opening hours. 
-(Insert infowindow image here)
+![Info Window](documentation/infowindow.png)
 
 Social media links feature allows all users, if they want to, to follow 'Limitless' on Facebook, Twitter and Instagram, however, this is only a design feature for now to make the website appear more user-friendly and welcoming. 
 
