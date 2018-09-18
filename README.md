@@ -37,7 +37,7 @@ A more detailed documentation of the Five Planes of UX is available [here](docum
 Autocomplete feature allows Users 1, 2 and 3 to search for and select their chosen locations, e.g. Almeria, Barbados or their local area.
 (Inset image autocomplete-search here)
 - Whilst User 1 will have no trouble searching for 'Almeria' or a specific location, User 2 may not receive accurate results as 'Barbados' is a country and not a town or city.
-(Insert image autocomplete-issue here)
+![Autocomplete Issue](documentation/autocomplete-issue.png)
 
 Radio buttons feature allows Users 1 to filter out places to eat and drink in Almeria, allows User 2 to filter out places to stay in Barbados, and allows User 3 to find points of interest in their local area (if there are any). 
 (Insert user3 image here)
@@ -76,7 +76,7 @@ These features would mean the user relies more on my website rather than moving 
     - This project uses the **Google Places API** Place Autocomplete feature to allow a user's search query to autocomplete.
 - [Font Awesome](https://fontawesome.com/)
     - This project uses **Font Awesome** to provide icons for the social media links inside the footer of the page.
-- [Wireframe.cc](https://wireframe.cc)D
+- [Wireframe.cc](https://wireframe.cc)
     - This project uses **Wireframe.cc** in the planning.
 - [Google Fonts](https://fonts.google.com/)
     - This project uses **Google Fonts** to provide the 'Patua One' font for the heading of the website.
